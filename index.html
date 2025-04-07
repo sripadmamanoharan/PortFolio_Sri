@@ -1,34 +1,236 @@
-<!-- Intro -->
-<section id="intro" class="wrapper style1 fullscreen fade-up">
-  <div class="inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;">
-
-    <!-- Left: Info -->
-    <div style="flex: 1 1 50%; min-width: 280px;">
-      <h1>Sri Padmavathi Manoharan</h1>
-      <p>
-        Data Analyst | Azure Specialist | ETL Developer <br>
-        Python | SQL | Power BI | Azure Data Factory | Machine Learning
-      </p>
-      <p>
-        Building data solutions that drive business decisions.<br>
-        Passionate about transforming raw data into actionable insights through analytics, visualization, and optimized pipelines.
-      </p>
-      <p>
-        📍 Indianapolis, IN <br>
-        📞 +1 (317) 222-0826 <br>
-        📧 <a href="mailto:sripadmavathime.ms@gmail.com">sripadmavathime.ms@gmail.com</a>
-      </p>
-      <p>
-        🔗 <a href="https://linkedin.com/in/your-link" target="_blank">LinkedIn</a> &nbsp;
-        🖥️ <a href="https://github.com/your-github" target="_blank">GitHub</a>
-      </p>
-      <a href="#one" class="button scrolly">Learn more</a>
-    </div>
-
-    <!-- Right: Profile Picture -->
-    <div style="flex: 1 1 40%; min-width: 250px; text-align: center;">
-      <img src="images/sri.jpeg" alt="Sri Padmavathi" style="max-width: 250px; border-radius: 50%;" />
-    </div>
-
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Padmavathi - Data Analyst | Azure Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Intro Section */
+        #intro {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #f9f9f9 0%, #e6f0ff 100%);
+        }
+        
+        .inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            width: 100%;
+        }
+        
+        /* Left Content */
+        .intro-content {
+            flex: 1 1 55%;
+            min-width: 280px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #2a4365;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            color: #4a6ea9;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .skill-tag {
+            background-color: #f0f7ff;
+            color: #2c5aa0;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #d0e3ff;
+        }
+        
+        /* Summary */
+        .summary {
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-item {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* Buttons */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.7rem 1.3rem;
+            background-color: #4a6ea9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .button:hover {
+            background-color: #3a5a8a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Profile Image */
+        .profile-img-container {
+            flex: 1 1 35%;
+            min-width: 250px;
+            text-align: center;
+        }
+        
+        .profile-img {
+            max-width: 280px;
+            width: 100%;
+            border-radius: 50%;
+            border: 5px solid #f0f0f0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .inner {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .button-container {
+                justify-content: center;
+            }
+            
+            .skills-container {
+                justify-content: center;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Intro Section -->
+    <section id="intro" class="wrapper">
+        <div class="inner">
+            <!-- Left: Professional Info -->
+            <div class="intro-content">
+                <h1>Sri Padmavathi Manoharan</h1>
+                <p class="tagline">Data Analyst | Azure Data Engineer | BI Developer</p>
+                
+                <!-- Core Skills -->
+                <div class="skills-container">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Azure Data Factory</span>
+                    <span class="skill-tag">Databricks</span>
+                    <span class="skill-tag">ETL Pipelines</span>
+                    <span class="skill-tag">Machine Learning</span>
+                </div>
+                
+                <!-- Professional Summary -->
+                <p class="summary">
+                    Transforming complex data into actionable insights and scalable solutions. 
+                    Specialized in building end-to-end data pipelines, interactive dashboards, 
+                    and machine learning models that drive business decisions. Microsoft Azure 
+                    certified professional with hands-on experience in cloud data solutions.
+                </p>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Indianapolis, IN | Remote</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:sripadmavathime.ms@gmail.com" style="color: #4a6ea9; text-decoration: none;">sripadmavathime.ms@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (317) 222-0826</span>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="button-container">
+                    <a href="https://linkedin.com/in/sripadma22" target="_blank" class="button">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/sripadmamanoharan" target="_blank" class="button">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="#projects" class="button">
+                        <i class="fas fa-code"></i> Projects
+                    </a>
+                    <a href="#" class="button">
+                        <i class="fas fa-file-download"></i> Resume
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right: Profile Picture -->
+            <div class="profile-img-container">
+                <img src="images/sri.jpeg" alt="Sri Padmavathi" class="profile-img">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
